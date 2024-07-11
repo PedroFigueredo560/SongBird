@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estudando HTML">
+  <meta name="author" content="Pedro Henrique Figueredo Costa">
+  <link rel="icon" href="../Imagens/passaro.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>SongBird</title>
+</head>
+<body>
+  <header class="topo">
+    <h1>
+      <a href="index.html">
+        <img src="../Imagens/logo_resized.png" alt="logo">
+      </a>
+    </h1>
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Sobre</a></li>
+      <li><a href="author.html">Autor</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section class="section_download">
+        <h1><i>Baixar video</i></h1>
+    
+        <h2>
+          Link:
+          <input type="text" id="link" required>
+          <br>
+          <button class="button" onclick='download_video()'><img src="../Imagens/play1.png" alt="play"></button>
+          <div id="display"></div>
+          <span id="error-message"></span>
+        </h2>
+      </section>
+  </div>
+</body>
+</html>
